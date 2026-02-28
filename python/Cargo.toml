@@ -1,0 +1,18 @@
+[package]
+name = "polyphon"
+version = "1.0.0"
+edition = "2024"
+description = "Implementation of phonetic Polyphon algorithm (PyO3 core wrapper)"
+license = "MIT"
+authors = ["Pavel Petrov <pavel09piatrov@gmail.com>"]
+repository = "https://github.com/krokochik/polyphon-rs"
+readme = "README.md"
+requires-python=">=3.7"
+
+[build-system]
+requires = ["maturin>=1.0"]
+build-backend = "maturin"
+
+[dependencies]
+pyo3 = { version = "0.28.2", features = ["extension-module", "abi3-py37"] }
+polyphon = "1.0"

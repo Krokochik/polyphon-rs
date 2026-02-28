@@ -1,0 +1,22 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "polyphon-py"
+version = "1.0.0"
+description = "Implementation of phonetic Polyphon algorithm (PyO3 core wrapper)"
+authors = [
+    {name = "Pavel Petrov", email = "pavel09piatrov@gmail.com"}
+]
+license = {text = "MIT"}
+requires-python = ">=3.7"
+classifier = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[tool.maturin]
+module-name = "polyphon"
+features = ["pyo3/extension-module"]

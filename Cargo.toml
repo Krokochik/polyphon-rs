@@ -1,5 +1,5 @@
 [package]
-name = "polyphon-rs"
+name = "polyphon"
 version = "1.0.0"
 edition = "2024"
 description = "Implementation of phonetic Polyphon algorithm"
