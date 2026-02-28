@@ -24,6 +24,9 @@ let code = encode("литие"); // -> "лата"
 
 **Note:** `encode` works on a single word and removes any non-Russian characters (including spaces). If you want to encode multiple words, split them first and encode each separately.
 
+### Python API
+There is a python wrapper for the public API. You can find it [here](https://github.com/Krokochik/polyphon-rs/blob/master/python/README.md).
+
 ### Code structure
 
 - `src/lib.rs` — public interface;
