@@ -1,5 +1,5 @@
 use pyo3::prelude::*;
-use polyphon::encode as en;
+use polyphon_core::encode as en;
 
 #[pyfunction]
 fn encode(s: &str) -> PyResult<String> {

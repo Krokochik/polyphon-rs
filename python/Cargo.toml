@@ -15,4 +15,4 @@ build-backend = "maturin"
 
 [dependencies]
 pyo3 = { version = "0.28.2", features = ["extension-module", "abi3-py37"] }
-polyphon = "1.0"
+polyphon-core = { version = "1.0", package = "polyphon" }
