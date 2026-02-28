@@ -3,9 +3,10 @@ requires = ["maturin>=1.0,<2.0"]
 build-backend = "maturin"
 
 [project]
-name = "polyphon-py"
+name = "polyphon"
 version = "1.0.0"
 description = "Implementation of phonetic Polyphon algorithm (PyO3 core wrapper)"
+readme="README.md"
 authors = [
     {name = "Pavel Petrov", email = "pavel09piatrov@gmail.com"}
 ]
@@ -16,6 +17,7 @@ classifier = [
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
+
 
 [tool.maturin]
 module-name = "polyphon"
