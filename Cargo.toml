@@ -8,7 +8,7 @@ authors = ["Pavel Petrov <pavel09piatrov@gmail.com>"]
 repository = "https://github.com/krokochik/polyphon-rs"
 readme = "README.md"
 keywords = ["phonetic", "russian", "polyphon"]
-categories = ["linguistics", "algorithms"]
+categories = ["algorithms", "science"]
 
 [dependencies]
 unicode-normalization = "0.1.20"
