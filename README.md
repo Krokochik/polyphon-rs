@@ -12,12 +12,12 @@ Authors: Viacheslav V. Paramonov, Alexey O. Shigarov, Gennagy M. Ruzhnikov, Poli
 Add the dependency:
 ```toml
 [dependencies]
-polyphon_rs = "1.0"
+polyphon = "1.0"
 ```
 
 And then use:
 ```rust
-use polyphon_rs::encode;
+use polyphon::encode;
 
 let code = encode("литие"); // -> "лата"
 ```
