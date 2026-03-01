@@ -16,7 +16,7 @@ $ pip install polyphon
 
 And then use:
 ```python
-from polyphon import encode;
+from polyphon import encode
 
 print(encode("литие")) # лата
 ```
