@@ -1,6 +1,6 @@
 [package]
 name = "polyphon"
-version = "1.0.0"
+version = "1.0.3"
 edition = "2024"
 description = "Implementation of phonetic Polyphon algorithm"
 license = "MIT"
