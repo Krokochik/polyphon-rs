@@ -61,6 +61,13 @@ fn repair_cyrillic_diacritic_lowercase(s: &str) -> String {
     res
 }
 
+/// Normalizes a Russian word before phonetic encoding:
+///
+/// 1. Applies Unicode NFKD
+/// 2. Converts to lowercase
+/// 3. Replaces Latin homoglyphs with Cyrillic
+/// 4. Restores 'ё' and 'й' after decomposition
+/// 5. Removes non-Cyrillic characters and 'ь'/'ъ'
 pub fn normalize(s: &str) -> String {
     let s = s.nfkd().collect::<String>();
     let s = s.to_lowercase();

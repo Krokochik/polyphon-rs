@@ -28,6 +28,9 @@ static VOWELS: phf::Set<char> = phf_set! {
     'и', 'а', 'о', 'у', 'ы', 'э', 'я', 'ё', 'е', 'ю'
 };
 
+/// If the word contains more than 3 syllables,
+/// removes all the vowels except the first and the last one.
+/// If there are at least 4 consonants, they are encountered as 2 syllables.
 pub fn reduce_vowels(s: &str) -> String {
     let mut enough_syllables = false;
     let chars: Vec<char> = s.chars().collect();
@@ -43,6 +46,7 @@ pub fn reduce_vowels(s: &str) -> String {
             }
             syllables += 1;
         } else {
+            // after normalization there are only letters here
             consonants += 1;
         }
         if syllables >= 3 || syllables >= 1 && consonants >= 4 {
@@ -151,7 +155,10 @@ pub fn replace_sequences(s: &str) -> String {
 
     let n = input.len();
     let mut i = 0usize;
+    // Apply sequence replacement using longest-match-first strategy
+    // to prevent shorter patterns from shadowing longer ones.
     'outer: while i < n {
+        // The first one is already the longest one due to sort.
         for pat in PATTERNS.iter() {
             let pat_len = pat.len;
             if pat_len == 0 || i + pat_len > n {
