@@ -1,5 +1,5 @@
 ## About
-It's the effective Rust implementation of phonetic Polyphon algorithm.
+It's an effective Rust implementation of phonetic Polyphon algorithm.
 
 Original paper: [«Polyphon: An Algorithm for Phonetic String Matching in Russian Language»](https://www.researchgate.net/publication/307477428_Polyphon_An_Algorithm_for_Phonetic_String_Matching_in_Russian_Language).
 
